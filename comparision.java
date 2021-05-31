@@ -31,14 +31,20 @@ public class comparision {
 				System.out.println("distancebetween"+"("+p1+","+q1+"),"+"("+p2+","+q2+")"+"is"+" " + distance2);
 				Double obj1 = distance1;
 				Double obj2 = distance2;
-				if (obj1.equals(obj2))
-				{
-					System.out.println("both distances are equal");
-				}
-				else
-				{
-					System.out.println("distances are different");
-				}
+				int val = Double.compare(obj1, obj2);
+			    System.out.println(val);
+			      if(val > 0)
+			      {
+			         System.out.println("distance1 is greater than distance2");
+			      } 
+			      else if(val < 0) 
+			      {
+			        System.out.println("distance1 is less than distance2");
+			      }
+			      else
+			      {
+			         System.out.println("distance1 is equal to distance2");
+			      }
 				
 				
 			}
